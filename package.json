@@ -1,5 +1,12 @@
 {
-	"name":       "show-ip-addr",
-	"version":    "0.0.1",
-	"main":       "main.js"
+	"name": "show-ip-addr",
+	"version": "0.0.1",
+	"main": "main.js",
+	"repository":
+	{
+		"type": "git",
+		"url": "git@github.com:aki-kuramoto/show-ip-addr.git"
+	},
+	"author": "Takel Hinomoto(aki-kuramoto)",
+	"license": "MIT"
 }
