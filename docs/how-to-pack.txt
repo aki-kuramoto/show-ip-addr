@@ -1,0 +1,5 @@
+npm -g install electron-prebuilt
+npm -g install electron-packager
+
+> electron-packager ./show-ip-addr show-ip-addr --platform=win32 --arch=x64 --version=1.2.8
+
