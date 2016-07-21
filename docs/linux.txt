@@ -1,0 +1,17 @@
+
+Following steps makes problem.
+$ tar -xf node-v4.4.7-linux-x64.tar.xz -C /usr/local/
+$ sudo ln -s /usr/local/node-v4.4.7-linux-x64/bin/node /usr/bin/node
+$ sudo ln -s /usr/local/node-v4.4.7-linux-x64/bin/npm /usr/bin/npm
+$ npm install electron-prebuilt -g
+$ sudo ln -s /usr/local/node-v4.4.7-linux-x64/lib/node_modules/electron-prebuilt/dist/electron /usr/bin/electron
+
+$ alias electron-packager='node /usr/local/node-v4.4.7-linux-x64/lib/node_modules/electron-packager/cli.js'
+$ unalias electron-packager
+$ chmod u+x /usr/local/node-v4.4.7-linux-x64/lib/node_modules/electron-packager/cli.js
+$ alias electron-packager='/usr/local/node-v4.4.7-linux-x64/lib/node_modules/electron-packager/cli.js'
+$ electron-packager . show-ip-addr --platfrom=linux --arch=x64
+$ /usr/local/node-v4.4.7-linux-x64/lib/node_modules/electron-packager/cli.js . show-ip-addr --platfrom=linux --arch=x64
+
+
+

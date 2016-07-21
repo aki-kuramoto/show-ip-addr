@@ -20,7 +20,7 @@ app.on('ready', () =>
 	// Dispose mainWindow reference on the window closed.
 	mainWindow.on('closed', () =>
 	{
-		mainWindow = null
+		mainWindow = null;
 	});
 	
 	let webContents = mainWindow.webContents;
