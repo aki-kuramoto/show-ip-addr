@@ -1,6 +1,6 @@
 {
 	"name":       "show-ip-addr",
 	"version":    "0.0.1",
-	"main":       "src/main.js",
+	"main":       "src/code/main.js",
 	"author":     "Takel Hinomoto(Aki-Kuramoto)"
 }

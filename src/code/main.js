@@ -11,7 +11,7 @@ app.on('ready', () =>
 {
 	let mainWindow = new electron.BrowserWindow({width: 800, height: 600, show: false});
 	let dirName = __dirname.replace(/\\/g, '/');
-	mainWindow.loadURL('file://' + dirName + '/index.html');
+	mainWindow.loadURL('file://' + dirName + '/../resources/index.html');
 	mainWindow.once('ready-to-show', () =>
 	{
 		mainWindow.show();
