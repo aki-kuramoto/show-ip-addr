@@ -33,7 +33,7 @@ app.on('ready', () =>
 	mainWindow.on('closed', () =>
 	{
 		process.stderr.write('[trace]show-ip-addr - on app ready - 8\n');
-		mainWindow = null
+		mainWindow = null;
 	});
 	process.stderr.write('[trace]show-ip-addr - on app ready - 9\n');
 	let webContents = mainWindow.webContents;
@@ -50,9 +50,14 @@ process.stderr.write('[trace]show-ip-addr - 5\n');
 // except OS-X for traditional conventional reason.
 app.on('window-all-closed', () =>
 {
+	process.stderr.write('[trace]show-ip-addr - on all closed - 1\n');
 	if (process.platform !== 'darwin')
 	{
+		process.stderr.write('[trace]show-ip-addr - on all closed - 2\n');
 		app.quit();
+var execSync = require('child_process').execSync;
+execSync('exit');
+		process.stderr.write('[trace]show-ip-addr - on all closed - 3\n');
 	}
 });
 process.stderr.write('[trace]show-ip-addr - 6\n');
