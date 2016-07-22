@@ -5,12 +5,16 @@ module.paths.unshift('C:\\Users\\whour\\node_modules');
 const packager = module.require('electron-packager');
 const package = require('../package.json');
 
+// var slash = require('slash');
+let dirName = __dirname.replace(/\\/g, '/');
+console.log(dirName);
+
 packager(
 {
 	name: package['name'],
-	dir: '../sources',
-	out: '../dist',
-	icon: '../source/resource/icon.ico',
+	dir: dirName + '/../src',
+	out: dirName + '/../dist',
+	icon: dirName + '/../source/resource/icon.ico',
 	platform: 'linux',
 	arch: 'x64',
 	version: '1.2.8',
