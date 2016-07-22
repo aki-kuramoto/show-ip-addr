@@ -1,4 +1,6 @@
 
+// for require('electron-packager');
+module.paths.push('C:\\Users\\whour\\AppData\\Roaming\\npm\\node_modules');
 const packager = require('electron-packager');
 const package = require('./package.json');
 
@@ -6,24 +8,23 @@ packager(
 {
 	name: package['name'],
 	dir: '../sources',
-    out: '../dist',
-    icon: '../source/resource/icon.ico',
-    platform: 'linux',
-    arch: 'x64',
-    version: '1.2.8',
-    overwrite: true,
-    asar: false,
-    'app-version': package['version'],
-    'app-copyright': 'Copyright (C) 2016 '+ package['author'] +'.',
-	
-    'version-string':
+	out: '../dist',
+	icon: '../source/resource/icon.ico',
+	platform: 'linux',
+	arch: 'x64',
+	version: '1.2.8',
+	overwrite: true,
+	asar: false,
+	'app-version': package['version'],
+	'app-copyright': 'Copyright (C) 2016 '+ package['author'] +'.',
+	'version-string':
 	{
 		CompanyName: '',
-        FileDescription: package["name"],
-        OriginalFilename: package["name"]+".exe",
-        ProductName: package["name"],
-        InternalName: package["name"]
-    }
+		FileDescription: package["name"],
+		OriginalFilename: package["name"]+".exe",
+		ProductName: package["name"],
+		InternalName: package["name"]
+	}
 }, function (err, appPaths)
 {
 	if (err) console.log(err);
