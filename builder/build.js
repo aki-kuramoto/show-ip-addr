@@ -1,8 +1,9 @@
 
 // for require('electron-packager');
-module.paths.push('C:\\Users\\whour\\AppData\\Roaming\\npm\\node_modules');
-const packager = require('electron-packager');
-const package = require('./package.json');
+// module.paths.unshift('C:\\Users\\whour\\AppData\\Roaming\\npm\\node_modules');
+module.paths.unshift('C:\\Users\\whour\\node_modules');
+const packager = module.require('electron-packager');
+const package = require('../package.json');
 
 packager(
 {
