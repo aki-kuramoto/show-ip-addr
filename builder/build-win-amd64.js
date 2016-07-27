@@ -1,7 +1,7 @@
-
+// On windows, SET NODE_PATH=%APPDATA%\npm\node_modules
 // for require('electron-packager');
 // module.paths.unshift('C:\\Users\\whour\\AppData\\Roaming\\npm\\node_modules');
-module.paths.unshift('C:\\Users\\whour\\node_modules');
+// module.paths.unshift('C:\\Users\\whour\\node_modules');
 const packager = module.require('electron-packager');
 const package = require('../package.json');
 
